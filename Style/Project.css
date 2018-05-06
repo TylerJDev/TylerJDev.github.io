@@ -1,0 +1,245 @@
+#ct-1-p {
+  margin-bottom: 50px;
+}
+
+.project-jumbo {
+  height: 700px;
+}
+
+.project-title-s {
+	text-align: center;
+	font-size: 4em;
+	font-family: 'Oswald', sans-serif;
+  margin-top: 12%;
+}
+
+.project-descr-s {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.project-overlay-s {
+    visibility: hidden;
+    transition: 500ms;
+}
+
+.project-jumbo:hover > .project-overlay-s {
+  transition: 500ms;
+  visibility: visible;
+}
+
+#project-title-m {
+  font-size: 4em;
+  display: inline-block;
+  font-family: 'Rozha One', serif;
+  border-bottom: 3px solid #F9BB4D;
+}
+
+.project-text {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  margin: 40px;
+}
+
+.sub-project-title {
+  font-size: 2.5em;
+  display: inline-block;
+  font-family: 'Rozha One', serif;
+  border-bottom: 3px solid #F9BB4D;
+}
+
+.project-image_sub {
+  background-color: #eee;
+  height: 600px;
+  width: 550px;
+}
+
+.skill_list {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+}
+
+#ct-3-p {
+  margin-bottom: 50px;
+}
+
+#responsive-jumbo {
+  height: 900px;
+  background-color: transparent;
+}
+
+#responsive-section {
+  text-align: center;
+}
+
+.response-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8em;
+  margin: 10px;
+}
+
+#tablet {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 10px 10px 10px 10px;
+  padding: 40px 30px 40px 30px;
+  background-color: black;
+  display: none;
+}
+
+#t-inner-frame {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 30px;
+}
+
+#t-button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#phone {
+  width: 300px;
+  height: 550px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 60px 20px 60px 20px;
+  background-color: black;
+  display: none;
+}
+
+#p-audio {
+  width: 50px;
+  height: 2px;
+  background-color: grey;
+  border: 1px solid grey;
+  margin: 0 auto;
+  position: relative;
+  bottom: 20px;
+}
+
+#p-inner-frame {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 30px;
+}
+
+#p-button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#desktop-frame {
+  width: 1200px;
+  height: 750px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 30px 30px 0px 0px;
+  padding: 60px 40px 60px 40px;
+  background-color: black;
+}
+
+#d-inner-frame {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  padding: 30px;
+}
+
+#d-outer-frame {
+  border: 2px solid #cacbcd;
+  width: 1200px;
+  background-color: #cacbcd;
+  padding: 30px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 0px 0px 30px 30px;
+}
+
+#d-camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30px;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #desktop-frame {
+    width: 100%;
+  }
+
+  #d-outer-frame {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project-overlay-s {
+    display: none;
+  }
+
+  .project-image_sub {
+    width: 100%;
+    height: 450px;
+    margin: 70px 0px 30px 0px;
+  }
+
+  #ct-4-p {
+    display: none;
+  }
+
+  .project-jumbo {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-jumbo {
+    height: 300px;
+  }
+
+  .project-text {
+    margin: 20px;
+  }
+
+  .project-image_sub {
+    width: 100%;
+    height: 300px;
+    margin: 100px 0px 50px 0px;
+  }
+
+  .sub-project-title {
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .skill_list {
+    padding-left: 0px;
+    text-align: center;
+  }
+}

@@ -12,10 +12,14 @@ body {
 #main-photo {
 	border: 1px solid #eee;
 	height: 600px;
+	background-image: url('../Images/atlanta-skyline.jpg');
+	background-size: cover;
+	filter: grayscale(100%);
+	background-position: 50% 50%;
 }
 
 #main-text {
-	right: 80px;
+	right: 10px; /* right: 80px; */
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -56,17 +60,30 @@ body {
 }
 
 .project-overlay {
-	background-color: black;
+	background-color: #eee;
 	height: 100%;
 	width: 100%;
 	top: 600px;
 	position: absolute;
 	transition: 500ms;
+	opacity: 0.9;
 }
 
 .project-col:hover > .project-overlay {
 		transition: 500ms;
 		top: 0px;
+}
+
+.project-title {
+	text-align: center;
+	margin-top: 35%;
+	font-size: 3em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.project-descr {
+	text-align: center;
+	font-size: 1.5em;
 }
 
 .rows {
@@ -77,7 +94,6 @@ body {
 
 #ct-3 {
 	margin-top: 30px;
-	display: none;
 }
 
 .about-con {
@@ -88,11 +104,6 @@ body {
 	width: 70%;
 	font-weight: 2.5em;
 	line-height: 1.3em;
-}
-
-#about-photo {
-	border: 1px solid #212121;
-	height: 600px;
 }
 
 /* footer */
@@ -123,13 +134,30 @@ footer {
 }
 
 .social-icon {
-	font-size: 2.5em !important;
+	font-size: 3em !important;
 	margin-right: 10px;
-	color: #333;
+	border-radius: 50%;
+	padding: 10px;
+	background-color: #F9BB4D;
+	color: white;
+	transition: 500ms;
+}
+
+.social-icon:hover {
+	background-color: white;
+	color: #F9BB4D;
+	transition: 500ms;
 }
 
 #social-list {
 	list-style: none;
+}
+
+#social-section {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	margin-top: 30px;
 }
 
 #social-list li {
@@ -145,9 +173,6 @@ footer {
 	display: inline;
 }
 
-.fa-twitter {
-	color: #1DA1F2;
-}
 
 #footer-right {
 	color: white !important;
@@ -161,6 +186,11 @@ footer {
 #footer-links {
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
+}
+
+#footer-links a {
+	text-decoration: none;
+	color: white;
 }
 
 #footer-links h1:before {
@@ -223,4 +253,12 @@ footer {
 	#footer-right {
 		padding: 25px;
 	}
+}
+
+/* Projects */
+
+#project-1 {
+	background-image: url('../Images/project_1.png');
+	background-size: cover;
+	background-position: 50% 50%;
 }

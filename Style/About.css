@@ -1,15 +1,123 @@
-body, html { 
-	font-family: 'Roboto', sans-serif;
+#about-jumbo h1, #contact-jumbo h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 5em;
+	font-weight: 900;
+	color: #F9BB4D; /* D7CCC8 */
+	position: absolute;
+	bottom: 50px;
+	top: 50px;
+	left: -150px;
 }
 
-/* Footer */
-.footer-of {
-	padding-top: 10px;
-	margin-top: 50px;
-	border-top: 1px solid #bdbdbd;
+#about-photo, #contact-photo {
+	border: 1px solid black;
+	height: 500px;
 }
 
-#footer-right {
-	text-align: right;
-	font-size: 1.7em;
+#about-text {
+	font-size: 2em;
+}
+
+#contact-jumbo h1 {
+	left: 350px;
+}
+
+#contact-text {
+	margin-top: 150px;
+}
+
+#contact-text h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+}
+
+#contact-text p > a {
+	text-decoration: none;
+	color: #D7CCC8;
+	border-bottom: 3px solid #F9BB4D;
+	font-size: 2em;
+	transition: 500ms;
+}
+
+#contact-text p > a:hover {
+	color: black;
+	border-bottom: 0px solid white;
+	transition: 500ms;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+	#ct-1 {
+		margin-bottom: 20px !important;
+	}
+
+	#about-text {
+		margin-left: 0px;
+		width: 100% !important;
+	}
+
+	#contact-jumbo {
+		margin-left: 0px;
+	}
+
+	#contact-photo {
+		margin-left: 16.6%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#about-jumbo h1 {
+		top: -100px;
+		left: 0px;
+		margin: 10px;
+	}
+
+	#ct-1 {
+		margin-top: 0px !important;
+		padding-top: 100px !important;
+	}
+
+	#about-text {
+		width: 100% !important;
+	}
+
+	#contact-jumbo h1 {
+		position: initial;
+		text-align: center;
+	}
+
+	#contact-text {
+		border-top: 3px solid #F9BB4D;
+		margin-top: 0px;
+	}
+
+	#contact-photo {
+		display: none;
+	}
+
+	#about-photo {
+		height: 350px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	#ct-1 {
+		padding-top: 0px !important;
+		margin-bottom: 10px !important;
+	}
+
+	#about-jumbo h1, #contact-jumbo h1 {
+		font-size: 3em;
+		position: initial;
+		text-align: center;
+	}
+
+	#about-photo {
+		display: none;
+	}
+
+	#about-text {
+		font-size: 1.5em;
+		margin: 0 auto;
+	}
 }
