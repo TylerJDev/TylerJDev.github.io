@@ -66,7 +66,7 @@ body {
 	top: 600px;
 	position: absolute;
 	transition: 500ms;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .project-col:hover > .project-overlay {
@@ -198,6 +198,137 @@ footer {
   content: ' - ';
 }
 
+#email {
+	padding-bottom: 10px;
+	display: inline;
+	border: 0px;
+	border-bottom: 4px solid white;
+	font-size: 24px;
+	background-color: transparent;
+	
+}
+/* Email Modal */
+.modal {
+  text-align: center;
+}
+
+.modal-col {
+	height: 400px;
+}
+
+.modal-dialog {
+	width: 800px !important;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  height: 400px;
+}
+
+.modal-header {
+	padding: 35px;
+	background-color: #f9bb4d;
+	color: white;
+}
+
+.modal-content {
+	background-color: white;
+	height: 100%;
+}
+
+#modal-header {
+	border-bottom: 4px solid #f9bb4d;
+	display: inline-block;
+}
+
+.modal-input {
+	border: 0px;
+	border-bottom: 2px solid #eee;
+	margin-bottom: 10px;
+}
+
+.modal-textarea {
+	border: 0px;
+	background-color: #eee;
+	border-radius: 10px;
+	resize: none;
+}
+
+.modal-col {
+	background-color: white;
+	padding: 30px;
+}
+
+#modal-envelope-open {
+	font-size: 42px;
+}
+
+.modal-col-side {
+	background-color: #f9bb4d;
+	height: 400px;
+	color: white;
+}
+
+.modal-col-side h3 {
+	font-size: 21px;
+}
+
+#contact-info {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#contact-info h4 {
+	margin-bottom: 20px;
+}
+
+.social-modal {
+	font-size: 30px;
+}
+
+.social-modal a {
+	color: white;
+}
+
+textarea {
+	margin: 15px;
+	width: 100%;
+	padding: 10px;
+	height: 110px;
+}
+
+label {
+	display: block;
+}
+
+#modal-send-btn {
+	margin-left: 15px;
+	border: 0px;
+	background-color: #558B2F;
+	border-radius: 15px;
+	color: white;
+	padding: 10px;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+#modal-close-btn {
+	margin-left: 15px;
+	border: 0px;
+	background-color: #EF5350;
+	border-radius: 15px;
+	color: white;
+	padding: 10px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
 @media screen and (min-width: 992px) {
 	#footer-links {
 		padding-left: 50px;
@@ -236,6 +367,15 @@ footer {
 	}
 }
 
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
 	#main-text {
 		padding: 0px;
@@ -261,4 +401,21 @@ footer {
 	background-image: url('../Images/project_1.png');
 	background-size: cover;
 	background-position: 50% 50%;
+}
+
+#project-2 {
+	background-image: url('../Images/project_2.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#project-3 {
+	background-image: url('../Images/project_3.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.fa-arrow-circle-right {
+	font-size: 40px !important;
+	color: #f9bb4d;
 }

@@ -15,4 +15,10 @@ $(document).ready(function() {
 		}
 		t_count++
 	}, 2000)
+	
+	$('#modal-social-header').hover(function() {
+		$(this).html('Natural habitats');
+	}, function() {
+		$(this).html('Social');
+	});
 });
