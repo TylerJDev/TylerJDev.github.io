@@ -1,0 +1,103 @@
+.jumbotron {
+	height: 620px !important;
+}
+
+#ct-1-p {
+	background-image: url('../../../Images/project_2_images/project_2_jumbo.png');
+	background-size: cover;
+}
+#ct-3-p {
+	background-color: transparent;
+}
+
+.s-project-jumbo {
+	margin: 75px 125px 125px 125px !important;
+}
+
+#ct-6-p {
+	background-image: url('../../../Images/project_2_images/project_2_s_1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 1%;
+}
+
+#ct-7-p {
+	background-image: url('../../../Images/project_2_images/project_2_s_2.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 59%;
+}
+
+.mid-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.skycon_ {
+	margin: 0 auto;
+	display: block;
+}
+
+#row-0 {
+	margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1224px) {
+	.jumbotron {
+		height: 420px !important;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#ct-1-p {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#ct-1-p {
+		height: 450px;
+	}
+
+	#row-0 > .col-md-4:first-of-type > .skycon_	 {
+		display: block !important;
+	}
+
+	.skycon_ {
+		display: none;
+	}
+
+	.s-project-jumbo {
+		margin: 0px !important;
+		height: 300px !important;
+		border: 20px solid transparent; /* Clever little hack since margin/border does not affect spacing */
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#ct-5-p {
+		padding: 0px;
+		margin-bottom: 50px;
+	}
+
+	.s-project-jumbo {
+		background-size: contain !important;
+		background-repeat: no-repeat;
+		background-color: transparent;
+	}
+
+	.s-project-jumbo {
+		margin: 0px !important;
+		height: 225px !important;
+	}
+
+	#ct-1-p {
+		height: 300px;
+	}
+}

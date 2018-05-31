@@ -1,5 +1,8 @@
 #ct-1-p {
   margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-color: transparent;
 }
 
 .project-jumbo {
@@ -24,7 +27,7 @@
 	font-size: 2.5em;
 }
 
-.project-overlay-s {
+/* .project-overlay-s {
     visibility: hidden;
     transition: 500ms;
 }
@@ -32,7 +35,7 @@
 .project-jumbo:hover > .project-overlay-s {
 	transition: 500ms;
 	visibility: visible;
-}
+} */
 
 #project-link {
 	transition: 300ms;
@@ -48,7 +51,7 @@
 }
 
 #project-title-m {
-  font-size: 4em;
+  font-size: 3.7em;
   display: inline-block;
   font-family: 'Rozha One', serif;
   border-bottom: 3px solid #F9BB4D;
@@ -194,6 +197,10 @@
   padding: 30px;
 }
 
+#ct-5-p {
+  overflow: hidden;
+}
+
 #d-outer-frame {
   border: 2px solid #cacbcd;
   width: 1200px;
@@ -232,14 +239,14 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-	.project-jumbo { 
+	.project-jumbo {
 		margin: 50px;
 	}
-	
+
 	.s-project-jumbo {
 		margin: 50px;
 	}
-	
+
 	#phoneLeft {
 		right: 0px;
 	}
@@ -264,24 +271,22 @@
     display: none;
   }
 
-  .project-jumbo {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 992px) {
 	.project-jumbo {
 		height: 500px;
 		width: 100%;
 		margin: 0 auto;
 	}
-  
+
 	.s-project-jumbo {
 		margin: 0px;
 		margin-top: 50px;
-		height: 500px;
+    height: 400px !important;
+  	margin-bottom: 10px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
 	}
-  
+
 	#phoneLeft {
 		right: 0px;
 	}
@@ -290,40 +295,70 @@
 		right: 0px;
 	}
 
+  .phone-type {
+    display: block;
+    margin: 0 auto;
+    float: initial !important;
+  }
+
 	.project-text {
 		margin: 20px;
 	}
-	
+
 	#footer-left {
 		display: none;
 	}
+
+  #ct-1-p {
+  	height: 500px !important;
+  	width: 90%;
+  	margin: 0 auto;
+  	background-size: contain !important;
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  #ct-1-p {
+    background-color: white;
+    height: 300px !important;
+    width: 100%;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-bottom: 0px;
+  }
+
+
+  #project-title-m {
+    font-size: 3em;
+  }
+
 	.project-jumbo {
 		height: 300px;
 		width: 100%;
 		margin: 0 auto;
   }
-  
+
 	.s-project-jumbo {
 		margin: 0px;
 		margin-top: 50px;
-		height: 300px;
+		height: 200px;
 	}
-  
+
 	#phoneLeft {
 		right: 0px;
 	}
 
 	#phoneRight {
 		right: 0px;
+  	float: none !important;
 	}
 
 	.project-text {
 		margin: 20px;
 	}
-	
+
 	#footer-left {
 		display: none;
 	}
@@ -343,5 +378,13 @@
   .skill_list {
     padding-left: 0px;
     text-align: center;
+  }
+
+	#ct-5-p {
+		padding: 0px;
+	}
+
+  .s-project-text {
+    margin-bottom: 20px;
   }
 }

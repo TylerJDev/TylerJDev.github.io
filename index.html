@@ -65,21 +65,25 @@
   			</div>
 
   			<div class="col-md-10">
+          <a href="Pages/Project/All_The_Music.html" class="project_link">
+    				<div class="col-md-6">
+    					<div class="project-col" id="project-1">
+                <div class="project-overlay">
+                  <h2 class="project-title">All The Music</h2>
+                  <p class="project-descr">Details about your favorite artists, albums & songs!</p>
+                </div>
+    					</div>
+    				</div>
+          </a>
   				<div class="col-md-6">
-  					<div class="project-col" id="project-1">
-              <div class="project-overlay">
-                <h2 class="project-title">All The Music</h2>
-                <p class="project-descr">Details about your favorite artists, albums & songs!</p>
-              </div>
-  					</div>
-  				</div>
-  				<div class="col-md-6">
-  					<div class="project-col" id="project-2">
-              <div class="project-overlay">
-                <h2 class="project-title">WeatherFly</h2>
-                <p class="project-descr">Get a forecast from anywhere in the world!</p>
-              </div>
-  					</div>
+            <a href="Pages/Project/WeatherFly.html" class="project_link">
+    					<div class="project-col" id="project-2">
+                <div class="project-overlay">
+                  <h2 class="project-title">WeatherFly</h2>
+                  <p class="project-descr">Get a forecast from anywhere in the world!</p>
+                </div>
+    					</div>
+            </a>
   				</div>
   			</div>
   			<div class="col-md-1">
@@ -94,12 +98,14 @@
 
         <div class="col-md-10">
   				<div class="col-md-6">
+            <a href="Pages/Project/TwitterGui.html" class="project_link">
   					<div class="project-col" id="project-3">
-					  <div class="project-overlay">
-						<h2 class="project-title">TweeGUI</h2>
-						<p class="project-descr">Twitter in a IRC-like format, with many features!</p>
-					  </div>
-							</div>
+					    <div class="project-overlay">
+						    <h2 class="project-title">TweeGUI</h2>
+						    <p class="project-descr">Twitter in a IRC-like format, with many features!</p>
+					    </div>
+						</div>
+          </a>
 						</div>
 						<div class="col-md-6 text-center" id="other-projects">
 							<div class="project-col" style='border:0px'>
@@ -121,8 +127,8 @@
       <h1>Social</h1>
       <div id="social-section">
         <a href="https://github.com/TylerJDev" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
-  		<a href="https://codepen.io/TylerJDev/#" target="_blank"><i class="fa fa-codepen social-icon" aria-hidden="true"></i></a>
-  		<a href="https://twitter.com/TyJDev" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+  		  <a href="https://codepen.io/TylerJDev/#" target="_blank"><i class="fa fa-codepen social-icon" aria-hidden="true"></i></a>
+  		  <a href="https://twitter.com/TyJDev" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
       </div>
     </div>
     <div id="footer-right" class="col-md-7">
@@ -130,7 +136,7 @@
         <h2><span class="changeHello">Hello</span>!</h2>
         <h5>Want to contact me?</h5>
         <ul class="footer-list">
-          <li><h3>+23 1 62 39 16 47</h3></li>
+          <li><h3>+1 (347)-339-1325</h3></li>
           <li><button id="email" data-toggle="modal" data-target="#emailModal">tylerjdev@gmail.com <i class="fa fa-envelope"></i></button></li>
         </ul>
         <!-- <h5>Credits for photo: <a href="#">@Unsplash</a></h5> -->
@@ -150,13 +156,13 @@
 		<div class="modal-content">
 			<div class="col-md-8 modal-col">
 				<h3 id="modal-header">Get in touch!</h3>
-				 <form action="https://formspree.io/tylerjdev@gmail" method="POST">
+				 <form action="https://formspree.io/tylerjdev@gmail" method="POST" onsubmit="return checkForm(event)">
 					<div class="col-md-6">
 						<div>
 							<label for="frmNameA">Name</label>
 							<input name="name" id="frmNameA" class="modal-input" placeholder="Name" required autocomplete="name">
 						</div>
-						
+
 						<div>
 							<label for="frmPhoneNumA">Phone</label>
 							<input type="tel" name="phone" id="frmPhoneNumA" class="modal-input" placeholder="(123)-456-7891" required autocomplete="tel">
@@ -167,27 +173,33 @@
 							<label for="frmEmailA">Email</label>
 							<input type="email" name="emailC" id="frmEmailC" class="modal-input" placeholder="name@example.com" required autocomplete="email">
 						</div>
-						
+
 						<div>
 							<label for="frmTopicA">Topic</label>
-							<input type="text" name="topic" id="frmTopicA" class="modal-input" placeholder="I'd like a website...">
+							<input type="text" name="topic" id="frmTopicA" class="modal-input" placeholder="I'd like a website..." required>
 						</div>
 					</div>
-					<textarea id="msg" name="user_message" class="modal-textarea"></textarea>
-					<input type="submit" value="Send" id="modal-send-btn">
+					<textarea id="msg" name="user_message" class="modal-textarea" required></textarea>
+					<input type="submit" value="Send" id="modal-send-btn" class="modal-btn">
 				</form>
-				<button id="modal-close-btn" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-			</div>
-	
+				<button id="modal-close-btn" class="btn btn-default modal-btn" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
+
+        <div id="social-section-sm">
+          <a href="https://github.com/TylerJDev" target="_blank"><i class="fa fa-github social-icon-sm" aria-hidden="true"></i></a>
+    		  <a href="https://codepen.io/TylerJDev/#" target="_blank"><i class="fa fa-codepen social-icon-sm" aria-hidden="true"></i></a>
+    		  <a href="https://twitter.com/TyJDev" target="_blank"><i class="fa fa-twitter social-icon-sm" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
 			<div class="col-md-4 modal-col modal-col-side">
 				<h3>Contact Information</h3>
-				
+
 				<div id="contact-info">
-					<h4><i class="fa fa-map-marker"></i> Location</h4>
+					<h4><i class="fa fa-map-marker"></i> Atlanta</h4>
 					<h4><i class="fa fa-envelope"></i> tylerjdev@gmail.com</h4>
-					<h4><i class="fa fa-phone"></i> +23 1 62 39 16 47</h4>
+					<h4><i class="fa fa-phone"></i> +1 (347)-339-1325</h4>
 				</div>
-				
+
 				<div id="modal-social">
 					<h3 id="modal-social-header">Social</h3>
 					<div>
@@ -203,5 +215,15 @@
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script src="JavaScript/pageScript.js"></script>
+<script type="text/javascript">
+var checkForm = function(e) {
+  const textarea = $('#msg')
+  if (textarea.val().length < 15) {
+    alert('Message must be more than 15 characters')
+    e.preventDefault();
+    return false;
+  }
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+{
+	"example_tweets":
+	{
+		"python": {
+			"tweet1": {
+				"user": "py7h0n_rul35",
+				"tweet": "Time to get my Python on! #PythonRules #SoftwareDev"
+			},
+
+			"tweet2": {
+				"user": "Jack",
+				"tweet": "AKU!"
+			},
+
+			"tweet3": {
+				"user": "Jin",
+				"tweet": "Who is this \"Samurai who smells of Sunflowers\"?"
+			},
+
+			"tweet4": {
+				"user": "Spike",
+				"tweet": "Uh, listen @Jet. You said \"bell peppers and beef.\" There's no beef in here. So you wouldn't really call it \"bell peppers and beef,\" now would you? #nobrainer"
+			},
+
+			"tweet5": {
+				"user": "Dwight",
+				"tweet": "I don’t care what @JimHalp says, that is not Benjamin Franklin. I am 99% sure."
+			},
+
+			"tweet6": {
+				"user": "Hank",
+				"tweet": "I sell propane and propane accessories"
+			},
+
+			"tweet7": {
+				"user": "Michael",
+				"tweet": "I love inside jokes. I'd love to be a part of one someday."
+			},
+
+			"tweet8": {
+				"user": "Michael",
+				"tweet": "Fool me once, strike one. Fool me twice... strike three."
+			}
+		}
+	}
+}

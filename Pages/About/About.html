@@ -2,13 +2,12 @@
 
 <html lang="en">
 <head>
-  <title>Portfolio</title>
+  <title>About - Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="../../Style/About.css" rel="stylesheet">
   <link href="../../Style/Navbar.css" rel="stylesheet">
   <link href="../../Style/Main.css" rel="stylesheet">
@@ -44,6 +43,36 @@
     		<div class="col-md-offset-1 col-md-10" id="about-jumbo">
           <h1>About Me</h1>
           <div id="about-photo" class="col-md-6 col-lg-6">
+            <pre class="code_ele">
+  &lt;html lang='en'&gt;
+    &lt;head&gt;
+      &lt;title&gt;Tyler&lt;/title&gt;
+    &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div id="About Me"&gt;
+      &lt;p&gt;Loves animals&lt;/p&gt;
+      &lt;p&gt;Is learning Spanish & Russian&lt;/p&gt;
+      &lt;p&gt;Has been to all sides of America&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;script type="text/javascript"&gt;
+      const skills = {
+        'HTML5': true,
+        'CSS3': true,
+        'Bootstrap': true,
+        'JavaScript': {
+          'React': true,
+          'jQuery': true
+        },
+        'Python': true,
+        'Git': true,
+        'Eating with chopsticks': false
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
           </div>
         </div>
 
@@ -52,9 +81,9 @@
 
 <div id="ct-2" class="container-fluid">
   <div id="about-text" class="col-md-offset-2 col-md-4">
-    <p>Following a childhood of video games, surf mags, basketball cards and VHS tapes, my life was destined for a world of design, motion and interaction.</p>
-    <p>Now, with over 12 years experience as a digital designer and art director, I'm still driven by the love to create work that inspires, educates and entertains. I'm currently working as a Senior Art Director at Pollen Sydney.</p>
-    <p>And because everyone loves a good list, here are a few of mine —</p>
+    <p>Stemming from a love of art, building, and those tiny lego pieces you would lose in a day, I always wanted to be a creator, a designer, and foremost to be able to learn something new everyday.</p>
+    <p>Today, I'm a Web Developer, driven by a love of learning. I have skills in various areas, and I'm not afraid to build something new. <span id="work">I'm currently open for work.</span></p>
+    <p>So come on and say hello -</p>
   </div>
 </div>
 
@@ -65,7 +94,7 @@
     		<div class="col-md-offset-1 col-md-10" id="contact-jumbo">
           <div id="contact-text" class="col-md-4">
             <br>
-            <h2>Phone: +23 1 62 39 16 47</h2>
+            <h2>Phone: +1 (347)-339-1325</h2>
             <h2>Email: tylerjdev@gmail.com</h2>
             <br>
             <p>
@@ -77,6 +106,19 @@
           </div>
           <h1>Contact Me</h1>
           <div id="contact-photo" class="col-md-6 col-lg-6">
+            <pre class="code_ele">
+const socialMedia = {
+	'Twitter': '@TyJDev',
+	'Github': 'TylerJDev',
+	'CodePen': '@TylerJDev',
+	'Instagram': 'tyjdev'
+}
+
+const contact = {
+	'Email': 'tylerjdev@gmail.com',
+	'Phone': '+1 (347)-339-1325'
+}
+            </pre>
           </div>
         </div>
 
@@ -97,7 +139,7 @@
         <h2><span class="changeHello">Hello</span>!</h2>
         <h5>Want to contact me?</h5>
         <ul class="footer-list">
-          <li><h3>+23 1 62 39 16 47</h3></li>
+          <li><h3>+1 (347)-339-1325</h3></li>
           <li><button id="email" data-toggle="modal" data-target="#emailModal">tylerjdev@gmail.com <i class="fa fa-envelope"></i></button></li>
         </ul>
         <!-- <h5>Credits for photo: <a href="#">@Unsplash</a></h5> -->
@@ -122,7 +164,7 @@
 							<label for="frmNameA">Name</label>
 							<input name="name" id="frmNameA" class="modal-input" placeholder="Name" required autocomplete="name">
 						</div>
-						
+
 						<div>
 							<label for="frmPhoneNumA">Phone</label>
 							<input type="tel" name="phone" id="frmPhoneNumA" class="modal-input" placeholder="(123)-456-7891" required autocomplete="tel">
@@ -133,7 +175,7 @@
 							<label for="frmEmailA">Email</label>
 							<input type="email" name="emailC" id="frmEmailC" class="modal-input" placeholder="name@example.com" required autocomplete="email">
 						</div>
-						
+
 						<div>
 							<label for="frmTopicA">Topic</label>
 							<input type="text" name="topic" id="frmTopicA" class="modal-input" placeholder="I'd like a website...">
@@ -144,16 +186,16 @@
 				</form>
 				<button id="modal-close-btn" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
 			</div>
-	
+
 			<div class="col-md-4 modal-col modal-col-side">
 				<h3>Contact Information</h3>
-				
+
 				<div id="contact-info">
-					<h4><i class="fa fa-map-marker"></i> Location</h4>
+					<h4><i class="fa fa-map-marker"></i> Atlanta</h4>
 					<h4><i class="fa fa-envelope"></i> tylerjdev@gmail.com</h4>
-					<h4><i class="fa fa-phone"></i> +23 1 62 39 16 47</h4>
+					<h4><i class="fa fa-phone"></i> +1 (347)-339-1325</h4>
 				</div>
-				
+
 				<div id="modal-social">
 					<h3 id="modal-social-header">Social</h3>
 					<div>
@@ -171,6 +213,30 @@
 <script type="text/javascript">
   window.sr = ScrollReveal();
   sr.reveal('.col-md-10')
+  const skills = {
+    'HTML5': true,
+    'CSS3': true,
+    'Bootstrap': true,
+    'JavaScript': {
+      'React': true,
+      'jQuery': true
+    },
+    'Python': true,
+    'Git': true,
+    'Eating with chopsticks': false
+  }
+
+  const socialMedia = {
+  	'Twitter': '@TyJDev',
+  	'Github': 'TylerJDev',
+  	'CodePen': '@TylerJDev',
+  	'Instagram': 'tyjdev'
+  }
+
+  const contact = {
+  	'Email': 'tylerjdev@gmail.com',
+  	'Phone': '+1 (347)-339-1325'
+  }
 </script>
 </body>
 

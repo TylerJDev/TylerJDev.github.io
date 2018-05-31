@@ -1,0 +1,73 @@
+#ct-1-p {
+	background-image: url('../../../Images/project_3_images/project_3_jumbo.png');
+	background-size: contain;
+	height: 630px;
+}
+
+.s-project-jumbo {
+	background-color: transparent;
+}
+
+#ct-6-p {
+	background-image: url('../../../Images/project_1_isometric/3.png');
+	background-size: cover;
+	border: 1px solid #eee;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 1%;
+}
+
+#ct-7-p {
+	background-image: url('../../../Images/project_1_isometric/1.png');
+	background-size: cover;
+	border: 1px solid #eee;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 59%;
+}
+
+#twitter_div {
+	margin: 0 auto;
+	display: block;
+}
+
+#test_twitter {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 1px solid #eee;
+	width: 30%;
+	background-color: transparent;
+	font-size: 26px;
+}
+
+.tweet_card {
+	border: 1px solid #eee;
+	margin-top: 20px;
+	width: 400px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+
+.tweet_card p {
+	font-size: 16px;
+}
+
+.mid-image {
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+	#test_twitter {
+		width: 100%;
+		text-align: center;
+		border: 0px;
+	}
+
+	.tweet_card {
+		width: 100%;
+	}
+}

@@ -1,0 +1,45 @@
+#ct-1-p {
+	background-image: url('../../../Images/project_1_images/project_1_jumbo.jpg');
+	background-size: cover;
+}
+
+#ct-6-p {
+	background-image: url('../../../Images/project_1_isometric/3.png');
+	background-size: cover;
+	border: 1px solid #eee;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 1%;
+}
+
+#ct-7-p {
+	background-image: url('../../../Images/project_1_isometric/1.png');
+	background-size: cover;
+	border: 1px solid #eee;
+	border-bottom: 0px;
+	filter: drop-shadow(30px 10px 4px #eee);
+	background-position: 50% 59%;
+}
+
+.mid-image {
+	display: block;
+	margin: 0 auto;
+}
+
+#iso-modal {
+	width: 420px !important;
+}
+
+#iso-modal {
+	height: 90% !important;
+}
+
+.modal-content {
+	background-size: cover;
+}
+
+@media screen and (max-width: 440px) {
+	#iso-modal {
+		width: 320px !important;
+	}
+}

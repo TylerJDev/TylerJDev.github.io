@@ -2,21 +2,19 @@
 
 <html lang="en">
 <head>
-  <title>Portfolio</title>
+  <title>Twitter Gui - Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link href="../../Style/Project.css" rel="stylesheet">
   <link href="../../Style/Navbar.css" rel="stylesheet">
   <link href="../../Style/Main.css" rel="stylesheet">
+  <link href="Style/TwitterGui.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
@@ -42,36 +40,37 @@
   </nav>
 <!-- jumbo, project descr, project tools + image, responsive section -->
 <div id="ct-1-p" class="jumbotron project-jumbo">
-  <div class="project-overlay-s">
-    <h2 class="project-title-s">Project Title</h2>
-    <p class="project-descr-s">Project Description</p>
-  </div>
   <div>
   </div>
 </div>
 
 <div id="ct-2-p" class="container">
   <div class="col-md-3">
-	<h2 id="project-title-m">Project Title</h2>
+	<h2 id="project-title-m">Twitter GUI</h2>
   </div>
   <div class="col-md-9">
-	<p class="project-text">We had to find a unique way to present their services, one that would match the tone of voice that the brand already had and visuals that would inspire and intrigue the user.</p>
-	<a href="#" id="project-link" class="project-text">Visit Website</a>
+	<p class="project-text">Imagine using twitter on a customizable interface, that is the goal of Twitter Gui - To be able to easily access twitter with a range of different features.</p>
+	<p id="project-link" class="project-text" style="display: inline">Coming Soon!</p>
   </div>
 </div>
 
 <div id="ct-3-p" class="jumbotron s-project-jumbo">
+    <div id="twitter_div">
+        <input id="test_twitter" type="text" name="test_twitter" placeholder="Hello World" disabled>
+        <div id="twitter_cards_con">
+        </div>
+    </div>
 </div>
 
 <div id="ct-4-p" class="container">
 	<div class="col-md-11">
-		<p class="project-text"><b>Inspiration came from the meaning of the name Taika Ström -</b>
+		<p class="project-text"><b>If Twitter was a Internet Relay Chat (IRC) -</b>
 		<br>
-		Magic stream or flow. We explored different patterns and textures seeking the essential elements to life. And everything came together in organic shapes of water reflections. Taika Ström is all about finding your flow like it says and so we wanted the website to reflect brand's vision and encourage the user to swim upstream together!</p>
+		Twitter can be a place where time can disappear. I wanted to make an application that would allow me to easily use twitter via a command line - That's how Twitter Gui was born. Using Tkinter and Python I developed an interface to hold twitter data, this allowed me to add all sorts of cool features that twitter doesn't come with natively.</p>
 	</div>
 </div>
 
-<div id="ct-5-p" class="container">
+<!-- <div id="ct-5-p" class="container">
 	<div>
 		<img src="../../Images/Iphone_gold.png" id="phoneLeft" height="600" width="328">
 		<img src="../../Images/Samsung_Gold.png" id="phoneRight" height="600" width="328" style="float: right">
@@ -82,24 +81,23 @@
 </div>
 
 <div id="ct-7-p" class="jumbotron s-project-jumbo">
-</div>
+</div> -->
 
 
 <div id="ct-8-p" class="container">
 	<div class="col-md-3 s-project-text">
 		<h3><b>Tools</b></h3>
-		<p>HTML5</P>
-		<p>CSS3</p>
-		<p>JavaScript</p>
+    <p>Python</p>
 	</div>
 	<div class="col-md-3 s-project-text">
 		<h3>See the project</h3>
-		<div>
+		<!-- <div>
 			<a href="#">Website</a>
 		</div>
 		<div>
 			<a href="#">Github</a>
-		</div>
+		</div> -->
+    <p>Coming Soon!</p>
 	</div>
 </div>
 
@@ -118,7 +116,7 @@
         <h2><span class="changeHello">Hello</span>!</h2>
         <h5>Want to contact me?</h5>
         <ul class="footer-list">
-          <li><h3>+1 (347)-339-1325</h3></li>
+          <li><h3>+23 1 62 39 16 47</h3></li>
           <li><button id="email" data-toggle="modal" data-target="#emailModal">tylerjdev@gmail.com <i class="fa fa-envelope"></i></button></li>
         </ul>
         <!-- <h5>Credits for photo: <a href="#">@Unsplash</a></h5> -->
@@ -132,7 +130,7 @@
     </div>
   </footer>
 
-  <div id="emailModal" class="modal fade" role="dialog">
+<div id="emailModal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="col-md-8 modal-col">
@@ -172,7 +170,7 @@
 				<div id="contact-info">
 					<h4><i class="fa fa-map-marker"></i> Atlanta</h4>
 					<h4><i class="fa fa-envelope"></i> tylerjdev@gmail.com</h4>
-					<h4><i class="fa fa-phone"></i> +1 (347)-339-1325</h4>
+					<h4><i class="fa fa-phone"></i> +23 1 62 39 16 47</h4>
 				</div>
 
 				<div id="modal-social">
@@ -187,6 +185,7 @@
 		</div>
 	</div>
 </div>
+
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script type="text/javascript">
 	window.sr = ScrollReveal();
@@ -212,6 +211,89 @@
 		duration: 650,
 		delay: 100
 	})
+var twitterJSON;
+
+const addCards = function(z) {
+  const mainDiv = document.querySelector('#twitter_cards_con');
+  // <div id="tweet_card_example">
+  //   <h5>@username</h5>
+  //   <p>An example tweet body, hello world!</p>
+  //   <h6>Posted at: 2018-05-19 21:06:56</h6>
+  // </div>
+  for (var x = 0; x < z.length; x++) {
+    mainDiv.insertAdjacentHTML('beforeend', `<div id=${'tweet_card_' + x} class="tweet_card"></div>`);
+    var mainTweetCard = document.querySelector(`#tweet_card_${x}`)
+    mainTweetCard.insertAdjacentHTML('beforeend', `<h5>${twitterJSON['example_tweets']['python'][z[x]]['user']}</h5>`);
+    mainTweetCard.insertAdjacentHTML('beforeend', `<p>${twitterJSON['example_tweets']['python'][z[x]]['tweet']}</p>`);
+    mainTweetCard.insertAdjacentHTML('beforeend', '<h6>Posted at: 2018-05-19 21:06:56</h6>');
+
+  }
+
+  var n_count = 0;
+
+  var fadeFunc = setInterval(function(){
+    $(`#tweet_card_${n_count}`).fadeIn('slow')
+    n_count += 1;
+    if (n_count >= $('.tweet_card').length) {
+      clearInterval(fadeFunc);
+    }
+  }, 500)
+
+}
+
+const commandTypes = {
+  python() {
+    // get random 3 tweets
+    const tweetAmount = 3;
+    const tweets = [];
+    const pyTweets = Object.keys(twitterJSON['example_tweets']['python']);
+    for (var x = 0; x < tweetAmount; x++) {
+      var randPick = Math.floor(Math.random() * pyTweets.length);
+      tweets.push(pyTweets[randPick]);
+      pyTweets.splice(randPick, 1)
+
+    }
+    addCards(tweets);
+  }
+}
+
+const getTwitterData = function() {
+  fetch('JavaScript/twitter_data.json')
+  .then((resp) => resp.json()) // Transform the data into json
+  .then(function(data) {
+    twitterJSON = data;
+    // Pass placeholder value
+    getConvo('Stream tweets', 'python')
+  })
+}
+
+getTwitterData();
+
+/**
+3 events -
+stream #python,
+get user x
+tweet text x
+**/
+
+const getConvo = function(d, e) {
+  var count = 0;
+  var convoCount = 0;
+  var typeS = d.split('');
+  var type_string = [];
+
+  var type = setInterval(function() {
+    if (convoCount >= d.length) {
+      clearInterval(type) // Once done, clear interval as to not keep looping through undefined
+      commandTypes[e]();
+    } else {
+      type_string.push(typeS[convoCount])
+      $('#test_twitter').attr('placeholder', type_string.join(''));
+      convoCount += 1;
+    }
+  }, 150)
+}
+
 </script>
 </body>
 

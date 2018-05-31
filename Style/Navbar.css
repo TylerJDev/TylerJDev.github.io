@@ -3,7 +3,7 @@
 .navbar {
 	background-color: transparent;
 	border: none;
-	font-size: 1.3em;
+	font-size: 2.3em;
 	padding: 10px;
 }
 
@@ -26,6 +26,15 @@
 	color: black;
 }
 
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-toggle > span {
+	color: black;
+	height: 3px !important;
+}
+
 #active-link {
 	color: black;
 	border-bottom: 2px solid #bdbdbd;
@@ -34,4 +43,15 @@
 
 .navbar-right {
 	margin-right: 50px;
+}
+
+.navbar-collapse {
+	border: none;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav {
+		float: none;
+		text-align: center;
+	}
 }
