@@ -6,16 +6,21 @@
 #ct-6-p {
 	background-image: url('../../../Images/project_1_isometric/3.png');
 	background-size: cover;
-	border: 1px solid #eee;
+	/* border: 1px solid #eee; */
 	border-bottom: 0px;
 	filter: drop-shadow(30px 10px 4px #eee);
 	background-position: 50% 1%;
+	margin-bottom: 50px !important;
+}
+
+#ct-3-p {
+	overflow: hidden;
 }
 
 #ct-7-p {
 	background-image: url('../../../Images/project_1_isometric/1.png');
 	background-size: cover;
-	border: 1px solid #eee;
+	/* border: 1px solid #eee; */
 	border-bottom: 0px;
 	filter: drop-shadow(30px 10px 4px #eee);
 	background-position: 50% 59%;

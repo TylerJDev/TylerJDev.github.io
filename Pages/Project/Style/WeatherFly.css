@@ -48,6 +48,12 @@
 	margin-bottom: 200px;
 }
 
+@media screen and (min-width: 1500px) {
+	#ct-1-p {
+    height: 730px !important;
+  }
+}
+
 @media screen and (max-width: 1224px) {
 	.jumbotron {
 		height: 420px !important;

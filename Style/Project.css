@@ -238,6 +238,12 @@
 	position: relative;
 }
 
+@media screen and (min-width: 950px) and (max-width: 1226px) {
+  #ct-1-p {
+    background-size: cover !important;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	.project-jumbo {
 		margin: 50px;
@@ -256,7 +262,14 @@
 	}
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1500px) {
+  #ct-1-p {
+    background-size: contain !important;
+    height: 850px !important;
+  }
+}
+
+@media screen and (max-width: 1225px) {
   .project-overlay-s {
     display: none;
   }
@@ -313,7 +326,7 @@
   	height: 500px !important;
   	width: 90%;
   	margin: 0 auto;
-  	background-size: contain !important;
+  	background-size: contain;
     padding-bottom: 0px;
   }
 }
