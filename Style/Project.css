@@ -269,6 +269,12 @@
   }
 }
 
+@media screen and (min-width: 750px) and (min-height: 720px){
+  #iso-modal {
+    width: 750px !important;
+  }
+}
+
 @media screen and (max-width: 1225px) {
   .project-overlay-s {
     display: none;

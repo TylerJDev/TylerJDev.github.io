@@ -32,7 +32,7 @@
 }
 
 #iso-modal {
-	width: 420px !important;
+	width: 420px;
 }
 
 #iso-modal {
@@ -42,7 +42,8 @@
 .modal-content {
 	background-size: cover;
 }
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 1226px) {
 	.s-project-jumbo {
 		height: 400px !important;
 	}
