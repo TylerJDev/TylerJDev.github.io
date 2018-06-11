@@ -264,8 +264,8 @@
 
 @media screen and (min-width: 1500px) {
   #ct-1-p {
-    background-size: contain !important;
-    height: 850px !important;
+    background-size: cover !important;
+    height: 950px !important;
   }
 }
 
