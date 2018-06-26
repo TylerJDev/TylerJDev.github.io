@@ -67,6 +67,7 @@ body {
 	position: absolute;
 	transition: 500ms;
 	opacity: 0.8;
+	display: none;
 }
 
 .project-col:hover > .project-overlay {

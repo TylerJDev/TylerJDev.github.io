@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	$('.project-overlay').css('display', 'block');
 	window.sr = ScrollReveal();
 	sr.reveal('.project-col')
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
 		}
 		t_count++
 	}, 2000)
-	
+
 	$('#modal-social-header').hover(function() {
 		$(this).html('Natural habitats');
 	}, function() {
