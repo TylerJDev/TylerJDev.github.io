@@ -507,6 +507,24 @@ label {
 	background-position: 50% 50%;
 }
 
+#project-4 {
+	background-image: url('../Images/project_4_images/project_4_home.png');
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#other-projects {
+	max-height: 300px !important; /* Only use if it's the only col in the row */
+}
+
+#other-projects > .project-col {
+	height: 100% !important; /* Only use if it's the only col in the row */
+}
+
+#other-projects > .project-col > .project-title {
+	margin-top: 10% !important; /* Only use if it's the only col in the row */
+}
+
 .fa-arrow-circle-right {
 	font-size: 40px !important;
 	color: #f9bb4d;
