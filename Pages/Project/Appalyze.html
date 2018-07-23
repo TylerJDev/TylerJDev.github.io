@@ -60,17 +60,82 @@
       <p class="message_text">Wikipedia is the best thing ever. Anyone in the world can write anything they want about any subject.</p>
       <p class="message_time"></p>
     </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">Wait wait wait! No no no! It means bear right, up there.</p>
+      <p class="message_time">12:00 PM</p>
+    </div>
+
+    <div class="message_box right_message no_script" style="">
+      <p class="message_text">No, it said right, it said take a right.</p>
+      <p class="message_time">12:01 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">No no no, look, it means go up to the right, bare right, over the bridge and hook up with 307.</p>
+      <p class="message_time">12:02 PM</p>
+    </div>
+
+    <div class="message_box right_message no_script" style="">
+      <p class="message_text">Maybe it's a shortcut Dwight. It said go to the right.</p>
+      <p class="message_time">12:03 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">It can't mean that! There's a lake there!</p>
+      <p class="message_time">12:04 PM</p>
+    </div>
+
+    <div class="message_box right_message no_script" style="">
+      <p class="message_text">The machine knows where it is going!</p>
+      <p class="message_time">12:05 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">This is the lake!</p>
+      <p class="message_time">12:06 PM</p>
+    </div>
+
+    <div class="message_box right_message no_script" style="">
+      <p class="message_text">The machine knows... stop yelling at me!</p>
+      <p class="message_time">12:07 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">No, it's... there's no road here!</p>
+      <p class="message_time">12:08 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">Remain calm! I have trained for this!</p>
+      <p class="message_time">12:09 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">Okay, exit the window!</p>
+      <p class="message_time">12:10 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">Here we go! Look out for leeches!</p>
+      <p class="message_time">12:11 PM</p>
+    </div>
+
+    <div class="message_box left_message no_script" style="">
+      <p class="message_text">Are you okay?! Swim for it! I got you!</p>
+      <p class="message_time">12:12 PM</p>
+    </div>
   </div>
 </div>
 
 <div id="total_count_row" class="row">
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Total Messages</h2>
-    <h3 id="total_messages">0</h3>
+    <h3 id="total_messages">?</h3>
   </div>
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Total Words</h2>
-    <h3 id="total_words">0</h3>
+    <h3 id="total_words">?</h3>
   </div>
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Top Word</h2>
@@ -240,6 +305,11 @@ var m_count = 0;
 var r_count = 0;
 var lines = [];
 var wordCount = 0;
+
+/* If user doesn't have JS on */
+$('.no_script').css('display', 'none');
+$('.no_script').remove();
+$('#app_type').css('overflow', 'hidden');
 
 for (var convos of conversation) {
   if (usersNames.includes(convos[0]) !== true && convos.length > 1) {
