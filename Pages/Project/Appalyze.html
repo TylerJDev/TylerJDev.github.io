@@ -33,7 +33,7 @@
   		<ul class="nav navbar-nav">
   			<li><a href="../../index.html" class="navbar-link">Projects</a></li>
   			<li><a href="../About/About.html" class="navbar-link">About</a></li>
-  			<li><a href="#" class="navbar-link">Contact</a></li>
+  			<li><a href="../About/About.html" class="navbar-link">Contact</a></li>
   		</ul>
   		<!-- <a class="navbar-brand navbar-right" href="#"></a> -->
   	</div>
@@ -58,22 +58,23 @@
   <div id="app_type">
     <div class="message_box" style="display: none">
       <p class="message_text">Wikipedia is the best thing ever. Anyone in the world can write anything they want about any subject.</p>
-      <p class="message_time">12:02 AM</p>
+      <p class="message_time"></p>
     </div>
   </div>
-  <div id="total_count_row" class="row">
-    <div class="col-md-4 total_count text-center">
-      <h2>Total Messages</h2>
-      <h3 id="total_messages"></h3>
-    </div>
-    <div class="col-md-4 total_count text-center">
-      <h2>Total Words</h2>
-      <h3 id="total_words"></h3>
-    </div>
-    <div class="col-md-4 total_count text-center">
-      <h2>Top Word</h2>
-      <h3 id="top_word"></h3>
-    </div>
+</div>
+
+<div id="total_count_row" class="row">
+  <div class="col-xs-4 col-md-4 total_count text-center">
+    <h2>Total Messages</h2>
+    <h3 id="total_messages">0</h3>
+  </div>
+  <div class="col-xs-4 col-md-4 total_count text-center">
+    <h2>Total Words</h2>
+    <h3 id="total_words">0</h3>
+  </div>
+  <div class="col-xs-4 col-md-4 total_count text-center">
+    <h2>Top Word</h2>
+    <h3 id="top_word">?</h3>
   </div>
 </div>
 
@@ -111,6 +112,7 @@
 		<p>JavaScript</p>
     <p>React</p>
     <p>jQuery</p>
+    <p>Python</p>
 	</div>
 	<div class="col-md-3 s-project-text">
 		<h3>See the project</h3>
@@ -251,6 +253,7 @@ for (var convos of conversation) {
   message_box.clone().appendTo('#app_type').addClass(classTypes[usersNames.indexOf(choice[0])]);
   lines.push(conversation[count][choice[1]])
   $('.message_text').eq(count + 1).text(conversation[count][choice[1]]);
+  $('.message_time').eq(count + 1).text(`12:${count > 9 ? count : '0' + count} PM`)
   count++;
 };
 
