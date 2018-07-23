@@ -131,15 +131,15 @@
 <div id="total_count_row" class="row">
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Total Messages</h2>
-    <h3 id="total_messages">?</h3>
+    <h3 id="total_messages">13</h3>
   </div>
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Total Words</h2>
-    <h3 id="total_words">?</h3>
+    <h3 id="total_words">112</h3>
   </div>
   <div class="col-xs-4 col-md-4 total_count text-center">
     <h2>Top Word</h2>
-    <h3 id="top_word">?</h3>
+    <h3 id="top_word">the</h3>
   </div>
 </div>
 
@@ -310,6 +310,12 @@ var wordCount = 0;
 $('.no_script').css('display', 'none');
 $('.no_script').remove();
 $('#app_type').css('overflow', 'hidden');
+
+/* Th..Thats all folks! */
+/* This 'hides' the counts, and puts it back to default. The current count(s) are just placeholders */
+$('#total_messages').text('0');
+$('#total_words').text('0');
+$('#top_word').text('0');
 
 for (var convos of conversation) {
   if (usersNames.includes(convos[0]) !== true && convos.length > 1) {
