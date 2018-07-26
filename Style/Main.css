@@ -236,7 +236,7 @@ footer {
 	display: inline-block;
 	text-align: left;
 	vertical-align: middle;
-	height: 400px;
+	height: 450px;
 }
 
 .modal-header {
@@ -280,7 +280,7 @@ footer {
 
 .modal-col-side {
 	background-color: #f9bb4d;
-	height: 400px;
+	height: 100%;
 	color: white;
 }
 

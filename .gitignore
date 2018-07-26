@@ -4,3 +4,5 @@ JavaScript/canvas_testing.js
 Pages/Project_Backup
 Pages/Project/Isometric_Cards
 Images/misc
+__pycache__/
+minifykey.py

@@ -3,7 +3,8 @@
 
 import tinify
 import os
-tinify.key = "See other.txt for key"
+from minifykey import returnKey
+tinify.key = returnKey(); # "See other.txt for key"
 
 # Get all images
 imageFolder = os.listdir('Images/')
