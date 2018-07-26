@@ -91,6 +91,12 @@ body {
 		color: black;
 }
 
+.project_link:focus > .project-col > .project-overlay {
+	transition: 500ms;
+	top: 0px;
+	opacity: 0.8;
+}
+
 .rows {
 	margin-top: 40px;
 }
@@ -192,10 +198,10 @@ footer {
 	margin-bottom: 35px;
 }
 
-#footer-links {
+/* #footer-links {
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
-}
+} */
 
 #footer-links a {
 	text-decoration: none;

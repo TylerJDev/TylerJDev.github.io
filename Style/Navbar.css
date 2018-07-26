@@ -11,6 +11,16 @@
 	float: right;
 }
 
+.navbar-link, .footer_link {
+	border: 2px solid transparent;
+	transition: 0ms !important;
+}
+
+.navbar-link:focus, .footer_link:focus {
+	border: 2px solid #29B6F6;
+	transition: 0ms !important;
+}
+
 .navbar a {
 	margin: 10px; /*media*/
 	color: black;
