@@ -103,88 +103,98 @@
 
 
 <footer id="contact">
-    <div id="footer-left" class="col-md-5">
-      <h1>Social</h1>
-      <div id="social-section">
-        <a href="https://github.com/TylerJDev" target="_blank"><i class="fa fa-github social-icon" aria-hidden="true"></i></a>
-  		<a href="https://codepen.io/TylerJDev/#" target="_blank"><i class="fa fa-codepen social-icon" aria-hidden="true"></i></a>
-  		<a href="https://twitter.com/TyJDev" target="_blank"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
-      </div>
+  <div id="footer-left" class="col-md-5">
+    <h1>Social</h1>
+    <div id="social-section">
+      <a href="https://github.com/TylerJDev" target="_blank" aria-label="GitHub Link"><i class="fa fa-github social-icon" aria-hidden="true" title="GitHub"></i></a>
+      <a href="https://codepen.io/TylerJDev/#" target="_blank" aria-label="CodePen Link"><i class="fa fa-codepen social-icon" aria-hidden="true" title="CodePen"></i></a>
+      <a href="https://twitter.com/TyJDev" target="_blank" aria-label="Twitter Link"><i class="fa fa-twitter social-icon" aria-hidden="true" title="Twitter"></i></a>
+      <a href="https://www.linkedin.com/in/tyjdev" target="_blank" aria-label="LinkedIn Link"><i class="fa fa-linkedin social-icon" aria-hidden="true" title="LinkedIn"></i></a>
     </div>
-    <div id="footer-right" class="col-md-7">
-      <div class="col-md-6">
-        <h2><span class="changeHello">Hello</span>!</h2>
-        <h3 style="font-size: 14px; margin-top: 0px;">Want to contact me?</h3>
-        <ul class="footer-list">
-          <li><h3>+23 1 62 39 16 47</h3></li>
-          <li><button id="email" data-toggle="modal" data-target="#emailModal">tylerjdev@gmail.com <i class="fa fa-envelope"></i></button></li>
-        </ul>
-        <!-- <h5>Credits for photo: <a href="#">@Unsplash</a></h5> -->
-      </div>
-      <div id="footer-links" class="col-md-6">
-        <h1><a href="../../index.html" class="footer_link">Projects</a></h1>
-        <h1><a href="../About/About.html" class="footer_link">About</a></h1>
-        <h1><a href="../About/About.html#contact" class="footer_link">Contact</a></h1>
-      </div>
-      <!-- <a href="#ct-1">Back To Top</a> -->
+  </div>
+  <div id="footer-right" class="col-md-7">
+    <div class="col-md-6">
+      <h2><span class="changeHello">Hello</span>!</h2>
+      <h3 style="font-size: 14px; margin-top: 0px;">Want to contact me?</h3>
+      <ul class="footer-list">
+        <li><h3>+1 (347)-339-1325</h3></li>
+        <li><button id="email" data-toggle="modal" data-target="#emailModal">tylerjdev@gmail.com <i class="fa fa-envelope"></i></button></li>
+      </ul>
+      <!-- <h5>Credits for photo: <a href="#">@Unsplash</a></h5> -->
     </div>
-  </footer>
+    <div id="footer-links" class="col-md-6">
+      <h1><a href="../../index.html" class="footer_link">Projects</a></h1>
+      <h1><a href="../About/About.html" class="footer_link">About</a></h1>
+      <h1><a href="../About/About.html#contact" class="footer_link">Contact</a></h1>
+    </div>
+    <!-- <a href="#ct-1">Back To Top</a> -->
+  </div>
+</footer>
+</div>
 
 <div id="emailModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="col-md-8 modal-col">
-				<h3 id="modal-header">Get in touch!</h3>
-				 <form action="https://formspree.io/tylerjdev@gmail.com" method="POST">
-					<div class="col-md-6">
-						<div>
-							<label for="frmNameA">Name</label>
-							<input name="name" id="frmNameA" class="modal-input" placeholder="Name" required autocomplete="name">
-						</div>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="col-md-8 modal-col">
+      <h3 id="modal-header">Get in touch!</h3>
+       <form action="https://formspree.io/tylerjdev@gmail.com" method="POST" onsubmit="return checkForm(event)">
+        <div class="col-md-6">
+          <div>
+            <label for="frmNameA">Name</label>
+            <input name="name" id="frmNameA" class="modal-input" placeholder="Name" required autocomplete="name">
+          </div>
 
-						<div>
-							<label for="frmPhoneNumA">Phone</label>
-							<input type="tel" name="phone" id="frmPhoneNumA" class="modal-input" placeholder="(123)-456-7891" required autocomplete="tel">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div>
-							<label for="frmEmailA">Email</label>
-							<input type="email" name="emailC" id="frmEmailA" class="modal-input" placeholder="name@example.com" required autocomplete="email">
-						</div>
+          <div>
+            <label for="frmPhoneNumA">Phone</label>
+            <input type="tel" name="phone" id="frmPhoneNumA" class="modal-input" placeholder="(123)-456-7891" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <label for="frmEmailA">Email</label>
+            <input type="email" name="emailC" id="frmEmailA" class="modal-input" placeholder="name@example.com" required autocomplete="email">
+          </div>
 
-						<div>
-							<label for="frmTopicA">Topic</label>
-							<input type="text" name="topic" id="frmTopicA" class="modal-input" placeholder="I'd like a website...">
-						</div>
-					</div>
-          <label for="msg">Email Message</label>
-					<textarea id="msg" name="user_message" class="modal-textarea"></textarea>
-					<input type="submit" value="Send" id="modal-send-btn">
-				</form>
-				<button id="modal-close-btn" class="btn btn-default" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
-			</div>
+          <div>
+            <label for="frmTopicA">Topic</label>
+            <input type="text" name="topic" id="frmTopicA" class="modal-input" placeholder="I'd like a website..." required>
+          </div>
+        </div>
+        <label for="msg">Email Message</label>
+        <textarea id="msg" name="user_message" class="modal-textarea" required></textarea>
+        <input type="submit" value="Send" id="modal-send-btn" class="modal-btn">
+      </form>
+      <button id="modal-close-btn" class="btn btn-default modal-btn" data-dismiss="modal">Close <i class="fa fa-times"></i></button>
 
-			<div class="col-md-4 modal-col modal-col-side">
-				<h3>Contact Information</h3>
+      <div id="social-section-sm">
+        <a href="https://github.com/TylerJDev" target="_blank" aria-label="GitHub Link"><i class="fa fa-github social-icon-sm" aria-hidden="true" title="GitHub"></i></a>
+        <a href="https://codepen.io/TylerJDev/#" target="_blank" aria-label="CodePen Link"><i class="fa fa-codepen social-icon-sm" aria-hidden="true" title="CodePen"></i></a>
+        <a href="https://twitter.com/TyJDev" target="_blank" aria-label="Twitter"><i class="fa fa-twitter social-icon-sm" aria-hidden="true" title="Twitter"></i></a>
+        <a href="https://www.linkedin.com/in/tyjdev" target="_blank" aria-label="LinkedIn" ><i class="fa fa-linkedin social-icon-sm" aria-hidden="true" title="LinkedIn"></i></a>
+      </div>
+    </div>
 
-				<div id="contact-info">
-					<h4><i class="fa fa-map-marker"></i> Atlanta</h4>
-					<h4><i class="fa fa-envelope"></i> tylerjdev@gmail.com</h4>
-					<h4><i class="fa fa-phone"></i> +23 1 62 39 16 47</h4>
-				</div>
+    <div class="col-md-4 modal-col modal-col-side">
+      <h3>Contact Information</h3>
 
-				<div id="modal-social">
-					<h3 id="modal-social-header">Social</h3>
-					<div>
-						<span class="social-modal"><a href="https://twitter.com/TyJDev" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
-						<span class="social-modal"><a href="https://www.instagram.com/tyjdev/" target="_blank"><i class="fa fa-instagram"></i></a></span>
-						<span class="social-modal"><a href="https://plus.google.com/116306027687452398174" target="_blank"><i class="fa fa-google-plus-square"></i></a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div id="contact-info">
+        <h4><i class="fa fa-map-marker"></i> Atlanta</h4>
+        <h4><i class="fa fa-envelope"></i> tylerjdev@gmail.com</h4>
+        <h4><i class="fa fa-phone"></i> +1 (347)-339-1325</h4>
+      </div>
+
+      <div id="modal-social">
+        <h3 id="modal-social-header">Social</h3>
+        <div>
+          <span class="social-modal"><a href="https://twitter.com/TyJDev" target="_blank" aria-label="Twitter Link"><i class="fa fa-twitter-square" title="Twitter"></i></a></span>
+          <span class="social-modal"><a href="https://www.instagram.com/tyjdev/" target="_blank" aria-label="Instagram Link"><i class="fa fa-instagram" title="Instagram"></i></a></span>
+          <span class="social-modal"><a href="https://plus.google.com/116306027687452398174" target="_blank" aria-label="Google+ Link"><i class="fa fa-google-plus-square" title="Google+"></i></a></span>
+          <span class="social-modal"><a href="https://www.linkedin.com/in/tyjdev" target="_blank" aria-label="LinkedIn Link"><i class="fa fa-linkedin" title="LinkedIn+"></i></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
