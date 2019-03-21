@@ -27,6 +27,11 @@
 	font-size: 2.5em;
 }
 
+/* Hide Social */
+a[href*="linkedin"] {
+	display: none;
+}
+
 /* .project-overlay-s {
     visibility: hidden;
     transition: 500ms;

@@ -97,6 +97,11 @@ pre {
 	transition: 500ms;
 }
 
+/* Hide Social */
+a[href*="linkedin"] {
+	display: none;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1300px) {
 	#ct-1 {
 		margin-bottom: 20px !important;

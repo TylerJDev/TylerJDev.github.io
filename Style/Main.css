@@ -222,6 +222,12 @@ footer {
 	background-color: transparent;
 
 }
+
+/* Hide Social */
+a[href*="linkedin"] {
+	display: none;
+}
+
 /* Email Modal */
 .modal {
   text-align: center;
