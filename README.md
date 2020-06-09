@@ -1,2 +1,3 @@
 # TylerJDev.github.io
-This is my personal portfolio, it was made with much &lt;3!
+This is my old personal portfolio.
+See the new one at https://trjones.dev/
